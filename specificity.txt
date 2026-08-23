@@ -1,0 +1,19 @@
+Inline Styles
+Inline styles have the highest specificity and will always override styles if other selector(s) are also defined.
+ID Selector
+The ID selector also has high specificity but comes after the inline Style specificity. So, if we have an ID and other selectors except the inline style, then the element will take the ID selector properties and values.
+Class and Attribute Selectors
+Class selectors and attribute selectors have moderate specificity. Suppose the element has a class or attribute selector and not an inline style or ID selector, then the element will take properties and values from the class or attribute selector.
+Element Selector
+Element selectors like <p>, <div>, <a>, etc. have low specificity.
+Universal Selector
+Universal selectors (*) and combining selectors like not, first-child, and last-child have the lowest specificity.
+Inline Style > ID Selector > Class/Attribute/Pseudo-class > Element Selector > Universal Selector
+Specificity Calculation
+To calculate specificity, assign a value to each part of the selector:
+
+Universal Selector: 0
+Element selectors and pseudo-elements: 1
+Class selectors, attribute selectors, and pseudo-classes: 10
+ID selectors: 100
+Inline styles: 1000
