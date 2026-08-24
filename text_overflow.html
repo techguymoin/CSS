@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        div{
+        .box1{
             border: 2px solid;
             width: 35px;
             text-overflow: clip;/*ellipse is used so that if width is less but 
@@ -15,11 +15,21 @@
             overflow: hidden;/*overflow is used if the words are going
             out of width then it can be managed*/
         }
+        .box2{
+            height: 10vh;
+        width: 40vw;
+        border: 2px solid;
+        overflow: scroll;
+        overflow: auto;
+        }
     </style>
 </head>
 <body>
-    <div>
-        moin mera naam hai tumhaara naam kya hai
+    <div class="box1">
+       Lorem ipsum dolor sit amet.
+    </div>
+    <div class="box2">
+        Lorem ipsum dolor sit amet.
     </div>
 </body>
 </html>
