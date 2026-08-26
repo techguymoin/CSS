@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*It's position will be static normally first will be first div and second will be second div and continues*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            border: 2px solid;
+            height: 200px;
+            width: 100vw;
+            padding: 3px;
+            margin: 3px;
+            margin: 0;
+
+        }
+
+        .box1 {
+            height: 80px;
+            background-color: darkolivegreen;
+            position: fixed;
+            top: 0px;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+
+        }
+
+        .box2 {
+            background-color: bisque;
+        }
+
+        .box3 {
+            background-color: cadetblue;
+        }
+
+        /*this box will stay at its place while the other page is can be scrolled*/
+        .box4 {
+            background-color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+
+
+</body>
+
+</html>
