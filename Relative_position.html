@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*It's position will  be static normally first will be first div and second will be second div and continues*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /*we can use z-index by addind a position other than static*/
+        /*here we can se that after removing of background of
+        first box and third one how overlaping and z axis work*/
+        .box1{
+        background-color:aqua ;
+        position: relative;
+        top: 120px;/*It will move box1 downwards*/
+        z-index: 2;       
+        background: none;
+        }
+        
+        .box2{
+         background-color: bisque; 
+         position:relative;
+         top: 100px;
+         left: 20px;
+         
+
+        }
+        
+        .box3{
+        background-color: cadetblue;
+        position: relative;
+        z-index: 1.5;    
+        background: none;
+        }
+        
+        .box4{
+          background-color:darkolivegreen ;  
+        }
+.box{
+    border: 2px solid;
+    height: 133px;
+    width: 80vw;
+    padding: 3px;
+    margin: 3px;
+}
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box2"></div>
+    <div class="box box3"></div>
+    <div class="box box4"></div>
+
+
+</body>
+</html>
