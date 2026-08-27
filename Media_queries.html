@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        .box{
+        background-color: aqua;
+        height: 233px;
+        width: 233px;
+        border: 2px solid;
+        }
+        body{
+            background-color: blue;
+             display: flex;
+
+        }
+         /* 
+         This is also used 
+         @media screen and (orientation: portrait) {
+            body{
+                border: 2px solid purple;
+            } */
+        @media only screen and (max-width:455px){
+            body{
+                background-color: green;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box box1"></div>
+    <div class="box box1"></div>
+    <div class="box box1"></div>
+    <div class="box box1"></div>
+    <div class="box box1"></div>
+    het i am a body!
+</body>
+</html>
