@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --color:rgb(88, 88, 163);
+            --seccolor:rgb(70, 70, 79);
+            --defpad:20px;
+        }
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ .nav{
+    height: 80px;
+            background-color:var(--color);
+            position: sticky;
+            top: 0px;
+            height: 50px;
+            width: 100%;
+            margin: 0;
+ }
+ .container{
+    --text-color:white;  /*local variable*/
+    color: var(--text-color,blue);/*here blue is the fallback value*/
+    background-color: var(--seccolor);
+    padding: var(--defpad);
+
+}
+ ul{
+    display: flex;
+ }
+ ul li{
+    list-style: none;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+ }
+ ul li:first-child{
+    --color:bisque;
+    background-color: var(--color);/*example of local variable*/
+ }
+    </style>
+</head>
+<body>
+    <div class="nav">
+    <ul>
+        <li>home</li>
+        <li>about</li>
+        <li>contact</li>
+    </ul>
+    </div>
+    <div class="container">
+    Lorem ipsum
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit suscipit ut culpa enim ea odio repudiandae, aliquid ratione, consectetur, atque maxime nemo. Veritatis excepturi nihil similique aperiam provident. Laborum tempora unde nesciunt necessitatibus esse quo veritatis, obcaecati, minus dolorem accusantium vitae! Repellat possimus accusantium placeat!, dolor sit amet consectetur adipisicing elit. Placeat consectetur impedit repellendus itaque dicta aliquid atque, a saepe odio dolor quos vitae ut ad sunt in eligendi dolore! Voluptatum accusamus ullam praesentium vitae ipsa beatae qui quisquam, provident, a maxime saepe illum modi quibusdam commodi.
+    </div>
+</body>
+</html>
