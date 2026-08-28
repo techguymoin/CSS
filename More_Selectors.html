@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*Here are more examples of selecters*/
+        .box:first-child {
+            background-color: brown;
+            /*for applying style on first child*/
+        }
+
+        .box::first-line {
+            color: rgb(46, 114, 173);
+            /*for applying style on first line*/
+        }
+
+        .boxes * {
+            border: 2px solid;
+            /* For appyling on all */
+        }
+
+        p,
+        a,
+        .box,
+        [data-color="primary"] {
+            /*grouping of selectors */
+            margin-top: 100px;
+            margin-bottom: 10px;
+        }
+
+        .box:nth-child(even) {
+            background-color: yellow;
+            /*it'll apply on the even childs*/
+        }
+
+        .box:nth-last-child(1) {
+            background-color: aqua;
+            /*it'll apply style on last child*/
+        }
+
+        .boxes::before {
+            content: " hey this is inserted using CSS";
+            /*it'll add this text before*/
+        }
+
+        .box:first-child::selection {
+            background-color: antiquewhite;
+            color: black;
+            /*it'll apply styles if text is selected*/
+        }
+
+        .input::placeholder {
+            color: blue;
+            /*it'll apply style on place holder*/
+        }
+    </style>
+</head>
+
+<body>
+    <div class="boxes">
+        <div data-color="primary" class="box">gwge</div>
+        <div class="box">ggtrge</div>
+        <div class="box">ggteet</div>
+        <div class="box">gwtgt</div>
+    </div>
+    <input type="text" placeholder="enter your name here" class="input">
+</body>
+
+</html>
