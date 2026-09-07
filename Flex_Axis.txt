@@ -1,0 +1,10 @@
+Main Axis
+1.The main axis is the direction in which flex items are arranged.
+2.With flex-direction: row, the main axis is horizontal.
+3.With flex-direction: column, the main axis is vertical.
+4.justify-content aligns items along the main axis.
+Cross Axis
+1.The cross axis is perpendicular to the main axis.
+2.With row, the cross axis is vertical.
+3.With column, the cross axis is horizontal.
+4.align-items aligns items along the cross axis.

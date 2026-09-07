@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            border: 2px solid blue;
+            display: flex;
+            height: 250px;
+            flex-direction: row;
+            flex-wrap: wrap;/*it'll continue the content to the next line if it is flowing*/
+            justify-content: center;
+            align-content: center;
+            background: linear-gradient(blue,pink);
+        }
+
+        .container2 {
+            border: 2px solid blue;
+            display: flex;
+            height: 250px;
+            flex-direction: row;
+            flex-wrap: wrap-reverse;/*this property is used if the content is overflowing if
+            it is then it will continue that content in next line*/
+            /*this two will center the contant*/
+            justify-content: center;
+            align-content: center;
+            gap: 5px;/*it will give gap between elements we also have row gap ang coloumn gap*/
+            background: linear-gradient(black,blue);
+        }
+
+        .items {
+            background-color: rgb(247, 200, 200);
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            margin: 4px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+    <div class="container2">
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+        <div class="items"></div>
+    </div>
+</body>
+
+</html>

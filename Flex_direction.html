@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container1 {
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            height: 250px;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .items {
+            background-color: rgb(247, 200, 200);
+            height: 50px;
+            width: 50px;
+            border: 2px solid;
+            margin: 4px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container2 {
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            height: 250px;
+            align-items: center;
+            flex-direction: column-reverse;
+        }
+
+        .container3 {
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            height: 250px;
+            align-items: center;
+            flex-direction: row;
+        }
+        .container4 {
+            border: 2px solid blue;
+            display: flex;
+            justify-content: center;
+            height: 250px;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+    </style>
+</head>
+
+<body>
+    <!--flex direction default is left to right but we can change it using flex-direction-->
+    <div class="container1">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <!--here 1,2,3,4 is written to show the direction-->
+    </div>
+    <div class="container2">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <!--here the numbers become 4,3,2,1 because it is reversed-->
+    </div>
+    <div class="container3">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <!--here 1,2,3,4 is written to show the direction-->
+    </div>
+    <div class="container4">
+        <div class="items">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <!--here the numbers become 4,3,2,1 because it is reversed-->
+    </div>
+</body>
+
+</html>
