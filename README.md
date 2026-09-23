@@ -11,3 +11,4 @@ example:
     }  
     here div is selecter,color is property and red is it's value
 This will apply red colour to all texts in div
+till now i've keared many thing in desigining
