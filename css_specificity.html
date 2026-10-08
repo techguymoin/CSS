@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Specificity</title>
+
+    <style>
+        /* 1. Element selector */
+        p {
+            color: blue;
+        }
+
+        /* 2. Class selector */
+        .text {
+            color: green;
+        }
+
+        /* 3. ID selector */
+        #heading {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <p id="heading" class="text">
+        CSS Specificity     <!--the stylie by id will be applied because it have morespecificity-->
+    </p>
+
+</body>
+</html>
