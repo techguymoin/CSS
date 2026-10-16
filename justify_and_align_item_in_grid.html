@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            border: 2px solid black;
+            display: grid;
+            height: 100vh;
+            grid-template-columns: 200px 200px;
+            grid-template-rows: 100px 100px 100px;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .items {
+            border: 2px solid black;
+            height: 50px;
+            width: 50px;
+
+        }
+        .item-1{
+            align-self: start;
+            justify-self: start;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="items item-1">1</div>
+        <div class="items">2</div>
+        <div class="items">3</div>
+        <div class="items">4</div>
+        <div class="items">5</div>
+    </div>
+</body>
+
+</html>
