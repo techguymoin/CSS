@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            height: 30vh;
+            width: 60vw;
+        }
+        .box{
+            background-color: brown;
+            height: 5vh;
+            width: 5vw;
+            animation-name: MOIN,bounce;
+            animation-duration: 2s;
+            animation-timing-function:cubic-bezier(0.42, 0, 0, 0.88);
+            animation-iteration-count: 5;
+            animation-fill-mode: forwards;
+            animation: bounce 1s ease-in 0 0 ;
+        }
+        @keyframes MOIN {
+            from{
+                background-color: brown;
+            }
+            to{
+                transform: translateX(800px);
+                background-color: bisque;
+            }
+        }
+        @keyframes bounce {
+        0%{transform: rotateX(100deg);}
+            
+        
+        20%{
+            transform: rotateY(100deg);
+            }    
+            
+        
+        50%{
+            transform: rotateX(100deg)
+        }
+        80%{
+            transform: rotateY(100deg);
+        }
+        90%{
+            transform: rotateX(1000deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            MOIN
+        </div>
+    </div>
+</body>
+</html>
